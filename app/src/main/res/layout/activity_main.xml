@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-240dp"
+    tools:layout_editor_absoluteY="-147dp"
+    android:background="@drawable/woodbc">
+
+    <ImageView
+        android:id="@+id/oven"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/pizzaoven" />
+
+    <ImageView
+        android:id="@+id/base"
+        android:layout_width="214dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091"
+        app:srcCompat="@drawable/base_pizza" />
+
+    <ImageView
+        android:id="@+id/pep_group"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base"
+        app:layout_constraintEnd_toEndOf="@+id/base"
+        app:layout_constraintStart_toStartOf="@+id/base"
+        app:layout_constraintTop_toTopOf="@+id/base"
+        app:srcCompat="@drawable/pepperoni_grouped" />
+
+    <ImageView
+        android:id="@+id/moz_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/base"
+        app:layout_constraintEnd_toEndOf="@+id/base"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="@+id/base"
+        app:layout_constraintTop_toTopOf="@+id/base"
+        app:layout_constraintVertical_bias="0.201"
+        app:srcCompat="@drawable/mozzarella_grouped" />
+
+    <ImageView
+        android:id="@+id/mush_group"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base"
+        app:layout_constraintEnd_toEndOf="@+id/base"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="@+id/base"
+        app:layout_constraintTop_toTopOf="@+id/base"
+        app:layout_constraintVertical_bias="0.82"
+        app:srcCompat="@drawable/mushroom_grouped" />
+
+    <ImageView
+        android:id="@+id/olive_group"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base"
+        app:layout_constraintEnd_toEndOf="@+id/base"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="@+id/base"
+        app:layout_constraintTop_toTopOf="@+id/base"
+        app:layout_constraintVertical_bias="0.881"
+        app:srcCompat="@drawable/olives_grouped" />
+
+    <ImageView
+        android:id="@+id/oni_group"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base"
+        app:layout_constraintEnd_toEndOf="@+id/base"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/base"
+        app:layout_constraintTop_toTopOf="@+id/base"
+        app:layout_constraintVertical_bias="0.206"
+        app:srcCompat="@drawable/onions_grouped" />
+
+    <ImageView
+        android:id="@+id/tom_group"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="@+id/base"
+        app:layout_constraintEnd_toEndOf="@+id/base"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="@+id/base"
+        app:layout_constraintTop_toTopOf="@+id/base"
+        app:layout_constraintVertical_bias="0.561"
+        app:srcCompat="@drawable/tomatoes_grouped" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/spinnerContainer"
+        app:layout_constraintTop_toBottomOf="@+id/fin_text"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/tomatoes"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mushroom"
+            app:layout_constraintEnd_toStartOf="@+id/mushroom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mushroom"
+            app:srcCompat="@drawable/tomatoes" />
+
+        <ImageView
+            android:id="@+id/mozzarella"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mushroom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mushroom"
+            app:layout_constraintTop_toTopOf="@+id/mushroom"
+            app:srcCompat="@drawable/mozzarella" />
+
+        <ImageView
+            android:id="@+id/olives"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintBottom_toBottomOf="@+id/pepperoni"
+            app:layout_constraintEnd_toStartOf="@+id/pepperoni"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pepperoni"
+            app:srcCompat="@drawable/olives" />
+
+        <ImageView
+            android:id="@+id/onion"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintBottom_toBottomOf="@+id/pepperoni"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/pepperoni"
+            app:layout_constraintTop_toTopOf="@+id/pepperoni"
+            app:srcCompat="@drawable/onion" />
+
+        <ImageView
+            android:id="@+id/mushroom"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.671"
+            app:srcCompat="@drawable/mushrooms" />
+
+        <ImageView
+            android:id="@+id/pepperoni"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="#00FFFDFD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            app:srcCompat="@drawable/pepperoni" />
+
+        <TextView
+            android:id="@+id/Tomatoes"
+            android:fontFamily="@font/brusselscity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomatoes"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tomatoes"
+            app:layout_constraintStart_toStartOf="@+id/tomatoes"
+            app:layout_constraintTop_toBottomOf="@+id/tomatoes" />
+
+        <TextView
+            android:id="@+id/Pepperoni"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pepperoni"
+            android:fontFamily="@font/brusselscity"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/mushroom"
+            app:layout_constraintEnd_toEndOf="@+id/pepperoni"
+            app:layout_constraintStart_toStartOf="@+id/pepperoni"
+            app:layout_constraintTop_toBottomOf="@+id/pepperoni" />
+
+        <TextView
+            android:id="@+id/Olives"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brusselscity"
+            android:text="Olives"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tomatoes"
+            app:layout_constraintEnd_toEndOf="@+id/olives"
+            app:layout_constraintStart_toStartOf="@+id/olives"
+            app:layout_constraintTop_toBottomOf="@+id/olives" />
+
+        <TextView
+            android:id="@+id/Mushrooms"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mushrooms"
+            android:fontFamily="@font/brusselscity"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/mushroom"
+            app:layout_constraintStart_toStartOf="@+id/mushroom"
+            app:layout_constraintTop_toBottomOf="@+id/mushroom" />
+
+        <TextView
+            android:id="@+id/Onions"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onions"
+            android:fontFamily="@font/brusselscity"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/mozzarella"
+            app:layout_constraintEnd_toEndOf="@+id/onion"
+            app:layout_constraintStart_toStartOf="@+id/onion"
+            app:layout_constraintTop_toBottomOf="@+id/onion" />
+
+        <TextView
+            android:id="@+id/Mozzarella"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mozzarella"
+            android:fontFamily="@font/brusselscity"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/mozzarella"
+            app:layout_constraintStart_toStartOf="@+id/mozzarella"
+            app:layout_constraintTop_toBottomOf="@+id/mozzarella" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B73E3E"
+        android:fontFamily="@font/mangabeyregular"
+        android:text="Finish Pizza"
+        android:textSize="30sp"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="@id/fin_text"
+        app:layout_constraintBottom_toBottomOf="@id/fin_text"
+        app:layout_constraintStart_toStartOf="@id/fin_text"
+        app:layout_constraintEnd_toEndOf="@id/fin_text"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B73E3E"
+        android:fontFamily="@font/mangabeyregular"
+        android:text="Back to Menu"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/buttons_layout"
+        app:layout_constraintEnd_toEndOf="@id/buttons_layout"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="@id/buttons_layout"
+        app:layout_constraintStart_toStartOf="@id/buttons_layout"
+        />
+
+    <Button
+        android:id="@+id/saveitm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B73E3E"
+        android:fontFamily="@font/mangabeyregular"
+        android:text="Save this Pizza"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/buttons_layout"
+        app:layout_constraintEnd_toEndOf="@id/buttons_layout"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintBottom_toBottomOf="@id/buttons_layout"
+        app:layout_constraintStart_toStartOf="@id/buttons_layout"
+        />
+
+    <TextView
+        android:id="@+id/fin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/brusselscity"
+        android:gravity="center"
+        android:text="Onion Tomato Pizza Onion Tomato Pizza Onion Tomato Pizza "
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/spinnerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Pizzas"
+            android:fontFamily="@font/brusselscity"
+            android:textColor="@color/white"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/brusselscity"
+
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
