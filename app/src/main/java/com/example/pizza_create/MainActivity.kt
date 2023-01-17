@@ -1,5 +1,7 @@
 package com.example.pizza_create
 
+import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -92,6 +94,20 @@ class MainActivity : AppCompatActivity() {
             setSpinner(ing)
         }
         setSpinner(ing)
+
+        val musickey = "music"
+        val music = sp.getBoolean(musickey, true)
+        var mp = MediaPlayer.create(this, R.raw.background_loop_app_2)
+        if (music)
+        {
+            mp.isLooping = true
+            mp.start()
+        }
+
+        settings_button.setOnClickListener {
+            startActivity(Intent(this, settings::class.java))
+            mp.stop()
+        }
     }
 
     fun setSpinner(ing : Array<Array<Any>>)

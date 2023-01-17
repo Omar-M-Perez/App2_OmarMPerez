@@ -10,6 +10,15 @@
     android:background="@drawable/woodbc">
 
     <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/settings_button"
+        android:src="@drawable/settings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
         android:id="@+id/oven"
         android:layout_width="400dp"
         android:layout_height="300dp"
@@ -334,6 +343,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saved Pizzas"
+            android:textSize="25dp"
             android:fontFamily="@font/brusselscity"
             android:textColor="@color/white"/>
         <Spinner
